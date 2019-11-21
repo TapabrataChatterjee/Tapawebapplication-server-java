@@ -1,4 +1,5 @@
 <html>
+        <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <h1>
         Register New User
     </h1>
@@ -7,15 +8,13 @@
         Username
      </label>
      <input type = "text" 
-            placeholder = "neil" 
             id ="username"/>
     </div>
     <div>
     <label for = "password">
         Password 
     </label>
-    <input type = "password" 
-            placeholder = "acdcsds!@1232" 
+    <input type = "password"  
            id = "password"/>
            
     </div>
@@ -25,19 +24,20 @@
             Confirm Password 
         </label>
         <input type = "password" 
-               id = "password"2/>
+               id = "password2"/>
         </div>
     
     <br>
     <br>
     
     <div>
-    <button>
+    <button id="registerBtn">
         Register
     </button>
-    <a href="login.template.client.html">
+    <a href="login.template.client.html" >
        Login
     </a>
+    <script src="register.controller.client.js"></script>
     
-    </div>
+  </div>
 </html>
