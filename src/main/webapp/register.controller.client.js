@@ -1,7 +1,7 @@
 (function () {
     var registerBtn = jQuery('#registerBtn');
     registerBtn.click(function () {
-        alert("Register button clicked");
+        alert("Register button clicked clicked.");
         var username = $('#username');
         username.css('color','red');
         var password = jQuery('#password');
@@ -23,7 +23,7 @@
             //  alert('passwords dont match');
           //  document.getElementById("password2").value = "";
           //  document.getElementById("password2").insertAdjacentText("afterend", "Passwords dont match");
-            password2.insertAdjacentText("Passwords donot match, Please re-enter");
+            password2.insertAdjacentText("afterend", "Passwords donot match, Please re-enter");
         }
         
 
