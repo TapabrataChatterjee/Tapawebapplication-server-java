@@ -20,10 +20,10 @@
 
         }
         else {
-            //  alert('passwords dont match');
-          //  document.getElementById("password2").value = "";
+             alert("Passwords dont match,Please re-enter");   
+             document.getElementById("password2").value = "";
           //  document.getElementById("password2").insertAdjacentText("afterend", "Passwords dont match");
-            password2.insertAdjacentText("afterend", "Passwords donot match, Please re-enter");
+           // password2.insertAdjacentText("afterend", "Passwords donot match, Please re-enter");
         }
         
 
