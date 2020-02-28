@@ -1,3 +1,5 @@
+//IIFE immediately invoked function expression
+
 (function () {
     var registerBtn = jQuery('#registerBtn');
     registerBtn.click(function () {
@@ -20,14 +22,21 @@
         }
         else {
              username.css('color','red');
-             $('p1').html('Passwords dont match');
+         //    $('p1').html('Passwords dont match');
              alert("Passwords dont match,Please re-enter");   
              password2.val()=" ";
              
           //  document.getElementById("password2").insertAdjacentText("afterend", "Passwords dont match");
            // password2.insertAdjacentText("afterend", "Passwords donot match, Please re-enter");
         }
-        
+        userobjStr = JSON.stringify(userobj);
+        fetch('/register',{
+          method : 'post',
+          body :userobjStr,
+          headers: {
+              'Content-type': 'application/json'
+          }
+        });
 
 
     })
