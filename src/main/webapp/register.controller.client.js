@@ -7,14 +7,20 @@
         var username = $('#username');
         var password = jQuery('#password');
         var password2 = jQuery('#password2');
+        var firstname =$('#firstname');
+        var lastname = $('#lastname');
         if (password.val() == password2.val()) {
         //    document.getElementById("password2").insertAdjacentText("afterend", "Passwords match");
             var passwordobj = password.val();
             var usernameobj = username.val();
+            var firstnameobj = firstname.val();
+            var lastnameobj = lastname.val();
 
             var userobj = {
                 username: usernameobj,
-                password: passwordobj
+                password: passwordobj,
+                firstName: firstnameobj,
+                lastName: lastnameobj
             }
         //    console.log(userobj);
 

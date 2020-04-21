@@ -25,8 +25,8 @@ public class UserService {
 	
 	
 	public User UserService (@RequestBody User user) {
-		user.setFirstName("First Name");
-		user.setLastName("Last Name");
+	//	user.setFirstName("First Name");
+	//	user.setLastName("Last Name");
 		
 		return userRepository.save(user);}
 
